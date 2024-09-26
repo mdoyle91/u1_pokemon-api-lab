@@ -1,0 +1,73 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex; /* Use flexbox for side-by-side panels */
+    justify-content: space-around; /* Space panels evenly */
+    width: 100%;
+    max-width: 1000px; /* Optional: limit max width */
+}
+
+.panel {
+    background-color: red; /* Red background for both panels */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%; /* Width of each panel */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    color: white; /* White text for better contrast */
+}
+
+.searchBar {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+.searchBar:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.imgContainer {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px; 
+}
+
+/* Styling wasn't part of the assignment, so I used ChatGPT exclusively to create it just because I didn't like the way it looked on the screen. I'm not in love with this display either, but beats nothing. */

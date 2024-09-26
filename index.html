@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <body>
+
+        <h1>Pokédex</h1>
+        
+        <div class="container">
+            <div class="panel">
+                <div class="pokemonImgBox">
+                    <img class="imgContainer" />
+                </div>
+            </div>
+        
+            <div class="panel">
+                <input class="searchBar" value="" placeholder="Choose your Pokemon!" type="text">
+                <button class="btn">Search</button>
+                
+                <ul class="attributeBox">
+                    <li id="name">Name: </li>
+                    <li id="id">ID: </li>
+                    <li id="weight">Weight: </li>
+                    <li id="height">Height: </li>
+                    <li id="ability">Abilities: </li>
+                    <li id="evolution">Evolves from/to: </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+    
+    
+</body>
+</html>
+
+
+<!-- Pseudo-coding
+ In the HTML->
+ -API Script link
+ -Attach the Javascript
+ -Title
+ -Containers (in two divs (one for left display, one right) w/ a class to potentially style later)
+    -Title: Pokedex 10.0 (h1 tags)
+    -Image display (img tags)
+        -Setting API info here
+            -one function for this to set the image
+            -Need to call from sprites (or extract URL from this portion)
+    -search bar (input tags) 
+        -Getting API info here
+        -Only searching by Pokemon or number (potentially add other attributes alater)
+    -button next to the search bar (button tags)
+    -attribute display (p tag)
+        -Setting API info here
+            -multiple functions for this to get different attributes
+        -Which attributes?
+            -Ability
+            -Forms
+            -Types
+            -Height
+            -Weight
+            -Species/Name
+            -ID
+
+-->
